@@ -1,3 +1,1 @@
-# STK Yapira Official website 🐝
-
- -- Under construction yet --
+Why a README here lmao 🥸🥸🥸🥸🥸🥸🥸🥸🥸🥸🥸🥸🥸🥸
