@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Hack, monospace;
+	color: forestgreen;
+	background-color: black;
+}
+
+li {
+	list-style: none;
+}
+
+/* Navigation links */
+
+nav {
+	padding: 5px;
+	display: flex;
+	gap: 12vw;
+	justify-content: center;
+	border-bottom: 2px solid forestgreen;
+}
+
+.nav-links {
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.nav-links:hover {
+	color: rgb(0, 255, 0);
+}
+
+.nav-links:hover::before {
+	color: rgb(0, 255, 0);
+	content: "> ";
+}
+
+.nav-links:hover::after {
+	color: rgb(0, 255, 0);
+	content: " <";
+}
+
+/* Hacking message */
+
+#hacked {
+	display: flex;
+	align-items: center;
+	height: 200px;
+	width: 100vw;
+}
+
+#hack-msg {
+	width: 70%;
+	margin: auto 20px auto;
+}
+
+#nine {
+	opacity: 50%;
+	height: 192px;
+	cursor: pointer;
+}
+
+/* Footer links*/
+
+footer {
+	width: 100vw;
+	border-top: 2px solid forestgreen;
+	padding: 20px;
+}
+
+.footer-title {
+	font-size: 20px;
+}
+
+.footer-itens {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	font-weight: 00;
+}
+
+.footer-links {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.footer-links:hover {
+	color: rgb(0, 255, 0);
+}
+
+.footer-links:hover::before {
+	color: rgb(0, 255, 0);
+	content: "> ";
+}
+
+.footer-links:hover::after {
+	color: rgb(0, 255, 0);
+	content: " <";
+}
