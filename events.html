@@ -5,6 +5,7 @@
     <title>Gusta's sewer hideout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/events.css" />
     <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
 </head>
 
@@ -16,13 +17,21 @@
         <a class="nav-links" href="./buddies.html">Buddies list</a>
     </nav>
 
-    <br>
+    <section class="running-event">
+        <h1>Running event</h1>
+        <h2>STK Enduro Tournament</h2>
+        <h3>1st Edition</h3>
+        <br>
+        <table id="enduro-1st" class="ranking">
+            <!-- Will be edited by ranking-*.js -->
+        </table>
+    </section>
 
-        <footer>
-        <p class="footer-title"><i>Some sites</i></p>
+    <footer>
+        <p id="footer-title"><i>Some sites</i></p>
         <div class="footer-itens">
             <label>
-                My social medias
+                <span class="footer-bold">My social medias</span>
                 <br>
                 <ul>
                     <li><a class="footer-links" href="https://github.com/SewerFox">My GitHub main page</a></li>
@@ -33,7 +42,7 @@
             </label>
             <br>
             <label>
-                SuperTuxKart
+                <span class="footer-bold">SuperTuxKart</span>
                 <br>
                 <ul>
                     <li><a class="footer-links" href="https://supertuxkart.net">Official website</a></li>
@@ -43,7 +52,7 @@
             </label>
             <br>
             <label>
-                KDE project
+                <span class="footer-bold">KDE project</span>
                 <br>
                 <ul>
                     <li><a class="footer-links" href="https://kde.org">Official website</a></li>
@@ -54,7 +63,7 @@
             </label>
             <br>
             <label>
-                Another thingies<br>that I like
+                <span class="footer-bold">My other interests</span>
                 <br>
                 <ul>
                     <li><a class="footer-links" href="https://sonic.fandom.com/wiki/Sonic_Prime">Sonic prime</a></li>
@@ -66,5 +75,7 @@
         </div>
     </footer>
 </body>
+
+<script src="./results-table_scripts/ranking-enduro-1st.js"></script>
 
 </html>

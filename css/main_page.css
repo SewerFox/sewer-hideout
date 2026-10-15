@@ -1,0 +1,19 @@
+/* Hacked joke message */
+
+#hacked {
+	display: flex;
+	align-items: center;
+	height: 200px;
+	width: 100vw;
+}
+
+#hack-msg {
+	width: 70%;
+	margin: auto 20px auto;
+}
+
+#nine {
+	opacity: 50%;
+	height: 192px;
+	cursor: pointer;
+}

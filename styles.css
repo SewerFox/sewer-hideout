@@ -40,26 +40,6 @@ nav {
 	content: " <";
 }
 
-/* Hacking message */
-
-#hacked {
-	display: flex;
-	align-items: center;
-	height: 200px;
-	width: 100vw;
-}
-
-#hack-msg {
-	width: 70%;
-	margin: auto 20px auto;
-}
-
-#nine {
-	opacity: 50%;
-	height: 192px;
-	cursor: pointer;
-}
-
 /* Footer links*/
 
 footer {
@@ -68,8 +48,9 @@ footer {
 	padding: 20px;
 }
 
-.footer-title {
+#footer-title {
 	font-size: 24px;
+	font-weight: 700;
 }
 
 .footer-itens {
@@ -77,6 +58,11 @@ footer {
 	justify-content: space-between;
 	margin-top: 10px;
 	font-weight: 00;
+}
+
+.footer-bold {
+	font-size: calc((24px + 16px) / 2);
+	font-weight: 700;
 }
 
 .footer-links {
