@@ -1,5 +1,6 @@
-{
-    "Spyker462": {
+[
+    {
+        "player": "Spyker462",
         "stk-enterprise": -1,
         "cornfield-crossing": 2,
         "lost-chasm": 2,
@@ -14,7 +15,8 @@
         "subsea": null,
         "total-points": null
     },
-    "FabianF": {
+    {
+        "player": "FabianF" ,
         "stk-enterprise": 4,
         "cornfield-crossing": 2,
         "lost-chasm": 2,
@@ -29,4 +31,4 @@
         "subsea": null,
         "total-points": null
     }
-}
+]
