@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gusta's sewer hideout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./css/enduro.css" />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+</head>
+
+<body>
+    <nav>
+        <a class="nav-links" href="./index.html">Homepage</a>
+        <a class="nav-links" href="./events.html">My STK events</a>
+        <a class="nav-links" href="./about.html">About me</a>
+        <a class="nav-links" href="./buddies.html">Buddies list</a>
+    </nav>
+
+    <section class="event-info">
+        <h1>Welcome to the 1st Edition of STK Enduro tournament!</h1>
+        <p> This tournament will be played between <b>October and November of 2026</b>, starting October 3 and ending
+            November 14.<br>
+            It's being organized by Gusta, with some support by FabianF. <br>
+            The races will happen in the server <i>Konqi's Endurance Resort</i>. <br>
+            You don't need to register to participate in this event. <br>
+            Just enter in the dedicated server on the scheduled days (see calendar below) and have fun :) <br>
+            Also, please make sure to read the rules below.</p>
+        <h2>1 Calendar</h2>
+        <p> All rounds will start on a <b>Saturday, at 16:00 UTC</b> (converted times to your region in: <a
+                href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=STK+Enduro+Tournament%27s+races+start+time&iso=20261010T16&p1=1440"
+                target="_blank">Time zone
+                converter</a>).
+        </p>
+        <h3>1.1 Opening stage</h3>
+        <p>All these races will be played in <b>normal</b> direction!</p>
+        <ul>
+            <li>
+                <a href="https://youtu.be/CUHQCjFhCQk?is=xAsZk5PTLyl-lxDg">
+                    <b>October 3:</b> STK Enterprise 20 laps – Cornfield Crossing 20 laps (done!!)
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/RP91QqEhtuI?is=Qo38G5ml4ksHpN8s">
+                    <b>October 10:</b> Lost Chasm 20 laps – Imminent Cold Effects 20 laps (both add-ons) (done!!);
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/live/W7m7Liwa-Ww">
+                    <b>October 17:</b> Northern Resort 20 laps – Supertux Raceway 20 laps (add-on).
+                </a>
+            </li>
+        </ul>
+
+        <h3>1.2 Closing stage</h3>
+        <p>All these races will be played in <b>reverse</b> direction!</p>
+        <ul>
+            <li>
+                <a>
+                    <b>October 31:</b> Hacienda 20 laps – Shifting Sands 20 laps;
+                </a>
+            </li>
+            <li>
+                <a>
+                    <b>November 7:</b> Tux Tollway 20 laps – Green Valley 20 laps (both add-ons);
+                </a>
+            </li>
+            <li>
+                <a>
+                    <b>November 14:</b> Antediluvian Abyss 20 laps – Subsea 12 laps (add-on).
+                </a>
+            </li>
+        </ul>
+
+        <h2>2 Tournament overview</h2>
+        <h3>2.1 Results table</h3>
+        <table id="results-table"><!-- Will be filled by a JS script --></table>
+        <h3>2.2 Ranking table</h3>
+        <table id="ranking-table"><!-- Will be filled by a JS script --></table>
+        <h3>2.3 Scoring system</h3>
+        <p>The tournament will use the following basic system (based on F1 2000s system): <br> <b>10 – 8 – 6 – 5 – 4 – 3
+                – 2 – 1 point(s) for the first eight players</b> each race.</p>
+
+        <h2>3 Rules</h2>
+        <h3>3.1 Schedule</h3>
+        <ul>
+            <li>All rounds will start on a Saturday, at 16:00 UTC (converted times to your region in: <a
+                    href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=STK+Enduro+Tournament%27s+races+start+time&iso=20261010T16&p1=1440"
+                    target="_blank">Time zone
+                    converter</a>).</li>
+            <li> The first race will start at most 5 minutes after the scheduled time (to wait for more players), and
+                the second race will start after a break of 5–7 minutes, as it's exhausting to play two 20 laps races
+                without resting a little :)</li>
+            <li>All races are planned to have 20 laps, so each race will likely last 20–30 minutes.</li>
+        </ul>
+
+        <h3>3.2 Add-on tracks</h3>
+        <ul>
+            <li>Some rounds will contain some add-on tracks. You MUST have these add-ons installed. If not, you won't
+                be able to
+                play on these tracks (you can just spectate in this case).</li>
+            <li>You can install these add-ons <a
+                    href="https://github.com/Gustanator/stk-enduro-archive/releases/tag/addons"
+                    target="_blank">here</a>. In the server motd, there will be a direct link to install
+                the
+                add-ons
+                inside the game.</li>
+        </ul>
+
+        <h3>3.3 Prohibited behaviour list</h3>
+        <ul>
+            <li> Don't drive in the reverse direction of the players (or do anything that will disturb, like stopping in
+                the
+                middle of the track without any reason). If you try to do this, well… the server (that was modded by
+                Heuchi1/kimden) will just kick you :)</li>
+            <li> Don't offend anyone with extremely heavy words (racism or another type of prejudice, many swear words
+                directed
+                at some players, the organizers or anyone else, or any big scuffle). If you dare to do this, you can be
+                banned
+                for the rest of the tournament or, in worse cases, of all future events.</li>
+        </ul>
+        <p>Depending on your behaviour, organizers may report you to STK admins, and the consequences can be even bigger
+            for you.</p>
+    </section>
+
+    <footer>
+        <p id="footer-title"><i>Some sites</i></p>
+        <div class="footer-itens">
+            <label>
+                <span class="footer-bold">My social medias</span>
+                <br>
+                <ul>
+                    <li><a class="footer-links" href="https://github.com/SewerFox">My GitHub main page</a></li>
+                    <li><a class="footer-links" href="https://github.com/Gustanator">My GitHub alt page</a></li>
+                    <li><a class="footer-links" href="https://www.youtube.com/@Gusta_TheSewerFox">My YouTube channel</a>
+                    </li>
+                </ul>
+            </label>
+            <br>
+            <label>
+                <span class="footer-bold">SuperTuxKart</span>
+                <br>
+                <ul>
+                    <li><a class="footer-links" href="https://supertuxkart.net">Official website</a></li>
+                    <li><a class="footer-links" href="https://forum.supertuxkart.net">STK Official Forum</a></li>
+                    <li><a class="footer-links" href="https://luffah.xyz/wiki/supertuxkart/">An unofficial wiki</a></li>
+                </ul>
+            </label>
+            <br>
+            <label>
+                <span class="footer-bold">KDE project</span>
+                <br>
+                <ul>
+                    <li><a class="footer-links" href="https://kde.org">Official website</a></li>
+                    <li><a class="footer-links" href="https://community.kde.org/Main_Page">KDE Community Wiki</a></li>
+                    <li><a class="footer-links" href="https://community.kde.org/Promo/Material/Mascots">Konqi goofies
+                            :3</a></li>
+                </ul>
+            </label>
+            <br>
+            <label>
+                <span class="footer-bold">My other interests</span>
+                <br>
+                <ul>
+                    <li><a class="footer-links" href="https://sonic.fandom.com/wiki/Sonic_Prime">Sonic prime</a></li>
+                    <li><a class="footer-links" href="https://battlebots.com/">BattleBots</a></li>
+                    <li><a class="footer-links" href="https://www.formula1.com/">Formula 1</a></li>
+                    <li><a class="footer-links" href="https://furaffinity.net/">Furries community</a></li>
+                </ul>
+            </label>
+        </div>
+    </footer>
+</body>
+
+<script type="module" src="./ranking-enduro-1st.js"></script>
+
+</html>
