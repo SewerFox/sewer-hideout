@@ -74,7 +74,29 @@
 
         <h2>2 Tournament overview</h2>
         <h3>2.1 Results table</h3>
-        <table id="results-table"><!-- Will be filled by a JS script --></table>
+        <div id="results-table">
+            <div class="table-header">
+                <span class="header">#</span>
+                <span class="header">Player</span>
+                <span class="header">Points</span>
+                <span class="header">STK Enterprise</span>
+                <span class="header">Cornfield Crossing</span>
+                <span class="header">Lost Chasm</span>
+                <span class="header">Immin. Cold Effects</span>
+                <span class="header">Nothern Resort</span>
+                <span class="header">Supertux Raceway</span>
+                <span class="header">Hacienda</span>
+                <span class="header">Shifting Sands</span>
+                <span class="header">Tux Tollway</span>
+                <span class="header">Green Valley</span>
+                <span class="header">Antediluvian Abyss</span>
+                <span class="header">Subsea</span>
+            </div>
+            <div id="player-results">
+                <!-- The table data will be filled by a JS script -->
+            </div>
+        </div>
+
         <h3>2.2 Ranking table</h3>
         <table id="ranking-table"><!-- Will be filled by a JS script --></table>
         <h3>2.3 Scoring system</h3>
@@ -172,6 +194,7 @@
     </footer>
 </body>
 
+<script src="../api/papaparse.js"></script>
 <script type="module" src="./ranking-enduro-1st.js"></script>
 
 </html>

@@ -4,7 +4,8 @@
     margin: 15px 150px;
 }
 
-h2, h3 {
+h2,
+h3 {
     margin: 7px 0;
 }
 
@@ -23,4 +24,48 @@ a:hover {
 
 li {
     list-style: disc;
+}
+
+/* Tables */
+
+#results-table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid forestgreen;
+    padding: 10px;
+}
+
+.table-header,
+#player-results {
+    display: grid;
+    grid-template-columns: 35px 200px 75px repeat(12, 200px);
+}
+
+.table-header,
+.header {
+    color: white;
+    background-color: forestgreen;
+}
+
+/* Position marks */
+
+.rank-1st {
+    color: gold;
+}
+
+.rank-2nd {
+    color: silver;
+}
+
+.rank-3rd {
+    color: brown;
+}
+
+.rank-null {
+    color: whitesmoke;
+}
+
+.rank-lost {
+    color: red;
 }
