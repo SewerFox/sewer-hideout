@@ -2,9 +2,9 @@
 
 #hacked {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 	align-items: center;
-	height: 200px;
+	height: fit-content;
 	width: 100vw;
 }
 
@@ -16,5 +16,25 @@
 #nine {
 	opacity: 50%;
 	height: 192px;
+	width: 192px;
 	cursor: pointer;
+}
+
+@media (max-width: 640px) {
+	#hacked {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#hack-msg {
+		margin: 20px 0;
+		scale: 110%;
+	}
+
+	#nine {
+		height: 256px;
+		width: 256px;
+	}
+
 }

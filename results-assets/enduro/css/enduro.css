@@ -69,3 +69,33 @@ li {
 .rank-lost {
     color: red;
 }
+
+@media (max-width: 640px) {
+    /* Information about the event */
+
+    .event-info {
+        margin: 15px 20px;
+    }
+
+    /* Tables */
+
+    #results-table {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        border: 1px solid forestgreen;
+        padding: 10px;
+    }
+
+    .table-header,
+    #player-results {
+        display: grid;
+        grid-template-columns: 35px 200px 75px repeat(12, 200px);
+    }
+
+    .table-header,
+    .header {
+        color: white;
+        background-color: forestgreen;
+    }
+}

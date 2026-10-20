@@ -55,9 +55,9 @@ footer {
 
 .footer-itens {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 10px;
-	font-weight: 00;
 }
 
 .footer-bold {
@@ -83,4 +83,40 @@ footer {
 .footer-links:hover::after {
 	color: rgb(0, 255, 0);
 	content: " <";
+}
+
+/* Mobile layout */
+
+@media (max-width: 640px) {
+	/* Navigation links */
+
+	nav {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		border-bottom: 2px solid forestgreen;
+		flex-direction: column;
+	}
+
+	.nav-links {
+		font-size: 22px;
+	}
+
+	/* Footer links*/
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#footer-title {
+		font-size: 28px;
+	}
+
+	.footer-itens {
+		margin: 20px 0;
+		scale: 110%;
+		display: block;
+	}
 }
