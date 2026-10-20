@@ -9,8 +9,7 @@
 .planned-events {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
     gap: 5px;
     margin: 20px;
 }
@@ -25,7 +24,6 @@ ul {
 
 @media (max-width: 640px) {
     ul {
-        display: grid;
-        grid-template-columns: 100%;
+        display: block;
     }
 }
