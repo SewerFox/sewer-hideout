@@ -12,7 +12,7 @@
     justify-content: center;
     text-align: center;
     gap: 5px;
-    margin: 0 0 20px;
+    margin: 20px;
 }
 
 ul {
@@ -21,4 +21,11 @@ ul {
     grid-gap: 20px;
     place-content: center;
     margin: 20px;
+}
+
+@media (max-width: 640px) {
+    ul {
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
