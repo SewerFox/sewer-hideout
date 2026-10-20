@@ -3,41 +3,22 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    margin: 15px 0;
+    margin: 15px 0 30px;
 }
 
-#top-four {
-    display: grid;
-    grid-template-columns: repeat(1, 400px);
+.planned-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 15px;
+    gap: 5px;
+    margin: 0 0 20px;
 }
 
-#st {
-    font-size: 30px;
-    font-weight: 900;
-}
-
-
-#nd {
-    font-size: 27px;
-    font-weight: 800;
-}
-
-#rd {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-
-#th {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#all-the-rest {
+ul {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
-    text-align: center;  
-    font-size: 18px;
+    grid-template-columns: repeat(3, 20%);
+    grid-gap: 20px;
+    place-content: center;
+    margin: 20px;
 }
