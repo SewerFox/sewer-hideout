@@ -1,0 +1,24 @@
+/* Global styles for pages with tons of text */
+
+.global-text {
+    margin: 15px 150px;
+}
+
+h2,
+h3,
+h4 {
+    margin: 7px 0;
+}
+
+a {
+    color: rgb(0, 180, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+.list {
+    list-style: disc;
+}

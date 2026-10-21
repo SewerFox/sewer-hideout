@@ -10,4 +10,3 @@ I hope you like my site :3
 
 TODO: 
  - Finish the "The STK Servers" page (with things about my servers in STK);
- - Finish the "Buddies List" page (with several links for another sites and YT channels of STK players);
