@@ -22,6 +22,15 @@
     margin: 20px;
 }
 
+.old-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin: 20px;
+}
+
 @media (max-width: 640px) {
     .ul {
         display: block;
