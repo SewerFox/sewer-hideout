@@ -14,7 +14,7 @@
     margin: 20px;
 }
 
-ul {
+.ul {
     display: grid;
     grid-template-columns: repeat(3, 20%);
     grid-gap: 20px;
@@ -23,7 +23,7 @@ ul {
 }
 
 @media (max-width: 640px) {
-    ul {
+    .ul {
         display: block;
     }
 }
