@@ -22,7 +22,7 @@ a:hover {
     color: aquamarine;
 }
 
-li {
+.ul {
     list-style: disc;
 }
 
