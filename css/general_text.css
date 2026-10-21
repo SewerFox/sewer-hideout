@@ -22,3 +22,11 @@ a:hover {
 .list {
     list-style: disc;
 }
+
+
+@media (max-width: 640px) {
+    /* Global styles for pages with tons of text */
+    .global-text {
+        margin: 15px 20px;
+    }
+}

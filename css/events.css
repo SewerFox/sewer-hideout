@@ -33,5 +33,6 @@
 @media (max-width: 640px) {
     .ul {
         display: block;
+        margin: 10px 20px;
     }
 }
