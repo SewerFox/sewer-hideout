@@ -97,8 +97,10 @@ while (j <= resultsLength) {
             newResultsTable[i].classList.add("rank-3rd")
         } else if (text.includes("---")) {
             newResultsTable[i].classList.add("rank-null")
-        } else if (text.includes("absent") || text.includes("forfeit")) {
-            newResultsTable[i].classList.add("rank-lost")
+        } else if (text.includes("absent")) {
+            newResultsTable[i].classList.add("rank-absent")
+        } else if (text.includes("withdrew")) {
+            newResultsTable[i].classList.add("rank-withdrew")
         }
     } j++
 }

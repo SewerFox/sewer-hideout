@@ -38,8 +38,12 @@
     color: whitesmoke;
 }
 
-.rank-lost {
+.rank-absent {
     color: red;
+}
+
+.rank-withdrew {
+    color: tomato;
 }
 
 @media (max-width: 640px) {
