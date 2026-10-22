@@ -24,26 +24,32 @@
 
 .rank-1st {
     color: gold;
+    font-weight: 700;
 }
 
 .rank-2nd {
     color: silver;
+    font-weight: 600;
 }
 
 .rank-3rd {
-    color: brown;
+    color: #CD7F32;
+    font-weight: 600;
 }
 
 .rank-null {
     color: whitesmoke;
+    font-weight: 900;
 }
 
 .rank-absent {
     color: red;
+    font-weight: 100;
 }
 
 .rank-withdrew {
-    color: tomato;
+    color: #CC0066;
+    font-weight: 100;
 }
 
 @media (max-width: 640px) {

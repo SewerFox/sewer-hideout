@@ -89,11 +89,12 @@ while (j <= resultsLength) {
     for (let i = 0; i < newResultsTable.length; i++) {
         const text = newResultsTable[i].textContent
 
-        if (text.includes("1st")) {
+        // Position highlighting
+        if (text.includes("1st") || (i == 1)) {
             newResultsTable[i].classList.add("rank-1st")
-        } else if (text.includes("2nd")) {
+        } else if (text.includes("2nd") || (i == 2)) {
             newResultsTable[i].classList.add("rank-2nd")
-        } else if (text.includes("3rd")) {
+        } else if (text.includes("3rd") || (i == 3)) {
             newResultsTable[i].classList.add("rank-3rd")
         } else if (text.includes("---")) {
             newResultsTable[i].classList.add("rank-null")
@@ -102,5 +103,5 @@ while (j <= resultsLength) {
         } else if (text.includes("withdrew")) {
             newResultsTable[i].classList.add("rank-withdrew")
         }
-    } j++
+    }
 }
