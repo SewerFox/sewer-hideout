@@ -90,11 +90,11 @@ while (j <= resultsLength) {
         const text = newResultsTable[i].textContent
 
         // Position highlighting
-        if (text.includes("1st") || (i == 1)) {
+        if (text.includes("1st")) {
             newResultsTable[i].classList.add("rank-1st")
-        } else if (text.includes("2nd") || (i == 2)) {
+        } else if (text.includes("2nd")) {
             newResultsTable[i].classList.add("rank-2nd")
-        } else if (text.includes("3rd") || (i == 3)) {
+        } else if (text.includes("3rd")) {
             newResultsTable[i].classList.add("rank-3rd")
         } else if (text.includes("---")) {
             newResultsTable[i].classList.add("rank-null")
