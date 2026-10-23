@@ -1,0 +1,39 @@
+.my-servers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    margin: 15px 150px;
+}
+
+.ul {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-gap: 20px;
+    place-content: center;
+    margin-bottom: 20px;
+}
+
+.old-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+
+    .my-servers,
+    .ul {
+        text-align: center;
+        margin: 10px 20px;
+    }
+
+    .ul {
+        display: block;
+        text-align: left;
+    }
+}
