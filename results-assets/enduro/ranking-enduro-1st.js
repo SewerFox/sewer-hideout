@@ -1,4 +1,4 @@
-const resultsTable = document.getElementById("player-results")
+const resultsTableHTML = document.getElementById("player-results")
 
 // Small function to convert a CSV table to a JSON object
 export const convertCSVtoObj = async (url) => {
@@ -9,16 +9,15 @@ export const convertCSVtoObj = async (url) => {
     return csv
 }
 
-// Get CSV table from GitHub
+// Getting CSV table from GitHub
 const table = await convertCSVtoObj("https://raw.githubusercontent.com/SewerFox/sewer-hideout/refs/heads/sewer-site/results-assets/enduro/results/enduro-1st.csv")
 
-// Format the table matrix
+// Formatting the table matrix
 const scoringSystem = [0, 10, 8, 6, 5, 4, 3, 2, 1]
 const tableLength = Object.keys(table.data[1]).length
-const resultsLength = Object.keys(table.data).length
-let i = 1
+const resultsLength = Object.keys(table.data).length - 1
 
-while (i <= resultsLength - 1) {
+for (let i = 1; i <= resultsLength; i++) {
     let sumOfPoints = 0
 
     for (let j = 1; j <= tableLength; j++) {
@@ -53,56 +52,79 @@ while (i <= resultsLength - 1) {
         }
     }
     table.data[i].push(sumOfPoints)
-    i++
 }
 
 // Sorting the table
 const formatedTable = table.data.sort((a, b) => b[13] - a[13])
 
-console.log(formatedTable)
-// Getting all indexes
-const indexes = formatedTable.map((x, index) => [index]);
+// Putting the table in the HTML
+let resultsTable = ``
 
-// Create the table
-let j = 1
-while (j <= resultsLength) {
-    resultsTable.innerHTML +=
+for (let i = 1; i <= resultsLength; i++) {
+    resultsTable +=
         `
-        <span class="table-data">${indexes[j]}</span>
-        <span class="table-data">${formatedTable[j][0]}</span>
-        <span class="table-data">${formatedTable[j][13]}</span>
-        <span class="table-data">${formatedTable[j][1]}</span>
-        <span class="table-data">${formatedTable[j][2]}</span>
-        <span class="table-data">${formatedTable[j][3]}</span>
-        <span class="table-data">${formatedTable[j][4]}</span>
-        <span class="table-data">${formatedTable[j][5]}</span>
-        <span class="table-data">${formatedTable[j][6]}</span>
-        <span class="table-data">${formatedTable[j][7]}</span>
-        <span class="table-data">${formatedTable[j][8]}</span>
-        <span class="table-data">${formatedTable[j][9]}</span>
-        <span class="table-data">${formatedTable[j][10]}</span>
-        <span class="table-data">${formatedTable[j][11]}</span>
-        <span class="table-data">${formatedTable[j][12]}</span>`
+        <span class="position-info">${i}</span>
+        <span class="position-info">${formatedTable[i][0]}</span>
+        <span class="points-info">${formatedTable[i][13]}</span>
+        <span class="table-data">${formatedTable[i][1]}</span>
+        <span class="table-data">${formatedTable[i][2]}</span>
+        <span class="table-data">${formatedTable[i][3]}</span>
+        <span class="table-data">${formatedTable[i][4]}</span>
+        <span class="table-data">${formatedTable[i][5]}</span>
+        <span class="table-data">${formatedTable[i][6]}</span>
+        <span class="table-data">${formatedTable[i][7]}</span>
+        <span class="table-data">${formatedTable[i][8]}</span>
+        <span class="table-data">${formatedTable[i][9]}</span>
+        <span class="table-data">${formatedTable[i][10]}</span>
+        <span class="table-data">${formatedTable[i][11]}</span>
+        <span class="table-data">${formatedTable[i][12]}</span>`
+}
 
-    const newResultsTable = document.getElementsByClassName("table-data")
+resultsTableHTML.innerHTML = resultsTable
 
-    for (let i = 0; i < newResultsTable.length; i++) {
-        const text = newResultsTable[i].textContent
+// Putting some highlights
 
-        // Position highlighting
-        if (text.includes("1st")) {
-            newResultsTable[i].classList.add("rank-1st")
-        } else if (text.includes("2nd")) {
-            newResultsTable[i].classList.add("rank-2nd")
-        } else if (text.includes("3rd")) {
-            newResultsTable[i].classList.add("rank-3rd")
-        } else if (text.includes("---")) {
-            newResultsTable[i].classList.add("rank-null")
-        } else if (text.includes("absent")) {
-            newResultsTable[i].classList.add("rank-absent")
-        } else if (text.includes("withdrew")) {
-            newResultsTable[i].classList.add("rank-withdrew")
-        }
+const tableData = document.querySelectorAll(".table-data")
+
+for (let i = 0; i < tableData.length; i++) {
+    const text = tableData[i].textContent
+
+    if (text.includes("1st")) {
+        tableData[i].classList.add("rank-1st")
+    } else if (text.includes("2nd")) {
+        tableData[i].classList.add("rank-2nd")
+    } else if (text.includes("3rd")) {
+        tableData[i].classList.add("rank-3rd")
+    } else if (text.includes("---")) {
+        tableData[i].classList.add("rank-null")
+    } else if (text.includes("absent")) {
+        tableData[i].classList.add("rank-absent")
+    } else if (text.includes("withdrew")) {
+        tableData[i].classList.add("rank-withdrew")
     }
-    j++
+}
+
+const positionInfo = document.querySelectorAll(".position-info")
+const pointsInfo = document.querySelectorAll(".points-info")
+
+for (let i = 0; i < positionInfo.length; i++) {
+    const text = positionInfo[i].textContent
+
+    if (text === "1") {
+        positionInfo[i + 0].classList.add("rank-1st")
+        positionInfo[i + 1].classList.add("rank-1st")
+        pointsInfo[i / 2].classList.add("rank-1st")
+    }
+
+    if (text === "2") {
+        positionInfo[i + 0].classList.add("rank-2nd")
+        positionInfo[i + 1].classList.add("rank-2nd")
+        pointsInfo[i / 2].classList.add("rank-2nd")
+    }
+
+    if (text === "3") {
+        positionInfo[i + 0].classList.add("rank-3rd")
+        positionInfo[i + 1].classList.add("rank-3rd")
+        pointsInfo[i / 2].classList.add("rank-3rd")
+    }
 }
