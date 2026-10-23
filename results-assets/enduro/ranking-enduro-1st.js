@@ -104,4 +104,5 @@ while (j <= resultsLength) {
             newResultsTable[i].classList.add("rank-withdrew")
         }
     }
+    j++
 }
