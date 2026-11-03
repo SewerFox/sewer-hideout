@@ -21,7 +21,8 @@
     margin-bottom: 20px;
 }
 
-.old-events {
+.old-events,
+.gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
