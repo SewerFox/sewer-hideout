@@ -5,7 +5,7 @@ export const convertCSVtoObj = async (url) => {
     const file = await fetch(url);
     const csvData = await file.text()
     const csv = await Papa.parse(csvData, { header: false })
-
+    console.log(csv.data)
     return csv
 }
 
