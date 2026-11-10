@@ -95,6 +95,8 @@ for (let i = 0; i < tableData.length; i++) {
         tableData[i].classList.add("rank-2nd")
     } else if (text.includes("3rd")) {
         tableData[i].classList.add("rank-3rd")
+    } else if (text.includes("4th") || text.includes("5th")) {
+        tableData[i].classList.add("rank-th")
     } else if (text.includes("---")) {
         tableData[i].classList.add("rank-null")
     } else if (text.includes("absent")) {
@@ -126,5 +128,11 @@ for (let i = 0; i < positionInfo.length; i++) {
         positionInfo[i + 0].classList.add("rank-3rd")
         positionInfo[i + 1].classList.add("rank-3rd")
         pointsInfo[i / 2].classList.add("rank-3rd")
+    }
+
+    if (text === "4" || text === "5") {
+        positionInfo[i + 0].classList.add("rank-th")
+        positionInfo[i + 1].classList.add("rank-th")
+        pointsInfo[i / 2].classList.add("rank-th")
     }
 }

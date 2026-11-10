@@ -37,6 +37,11 @@
     font-weight: 600;
 }
 
+.rank-th {
+    color: #00ff73;
+    font-weight: 600;
+}
+
 .rank-null {
     color: whitesmoke;
     font-weight: 900;
